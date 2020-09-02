@@ -1,0 +1,5 @@
+--color
+--profile
+--backtrace
+--default-path 'mod/'
+--require './spec/spec_helper'

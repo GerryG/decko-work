@@ -1,0 +1,5 @@
+--color
+--profile
+--backtrace
+--default-path '/home/gerry/work/decko'
+--require '/home/gerry/work/decko/card/spec/spec_helper'
