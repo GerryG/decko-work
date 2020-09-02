@@ -1,0 +1,6 @@
+---
+:cards:
+- :name: A
+  :type: RichText
+  :key: a
+:remotes: {}
