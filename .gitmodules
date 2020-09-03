@@ -1,0 +1,3 @@
+[submodule "vendor/card-mods"]
+	path = mod-dev/vendor/card-mods
+	url = git@github.com:GerryG/card-mods

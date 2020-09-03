@@ -1,14 +1,21 @@
 PATH
-  remote: /home/gerry/work/card-mods/airbrake
+  remote: vendor/card-mods/airbrake
   specs:
     card-mod-airbrake (1.0)
       airbrake (~> 7.0)
       card
 
 PATH
-  remote: /home/gerry/work/card-mods/csv_import
+  remote: vendor/card-mods/csv_import
   specs:
     card-mod-csv_import (0.8)
+      card
+      card-mod-layout
+
+PATH
+  remote: vendor/card-mods/layout
+  specs:
+    card-mod-layout (0.5)
       card
 
 PATH
@@ -401,6 +408,7 @@ DEPENDENCIES
   card!
   card-mod-airbrake!
   card-mod-csv_import!
+  card-mod-layout!
   cardname!
   colorize
   cypress-on-rails (~> 1.4)

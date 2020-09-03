@@ -7,9 +7,10 @@ path "/home/gerry/work/decko" do
 end
 
 # development in card-mods, existing or new
-#gem 'card-mod-X', path: '/home/gerry/work/card-mods/X'
-gem 'card-mod-csv_import', path: '/home/gerry/work/card-mods/csv_import'
-gem 'card-mod-airbrake', path: '/home/gerry/work/card-mods/airbrake'
+#gem 'card-mod-X', path: './vendor/card-mods/X'
+gem 'card-mod-csv_import', path: './vendor/card-mods/csv_import'
+gem 'card-mod-layout', path: './vendor/card-mods/layout'
+gem 'card-mod-airbrake', path: './vendor/card-mods/airbrake'
 
 gem 'mysql2', '>= 0.4.4'
 
