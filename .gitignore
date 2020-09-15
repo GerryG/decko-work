@@ -4,6 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile ~/.gitignore_global
 
+*.gem
+
 # assets?
 core-dev/public/assets/*/*
 core-dev/public/assets/*.js
@@ -17,7 +19,9 @@ mod-dev/.bundler
 
 # Ignore data files
 core-dev/files/*
+core-dev/public/files/*
 mod-dev/files/*
+mod-dev/public/files/*
 
 # Ignore log files
 core-dev/log/*
