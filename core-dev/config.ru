@@ -6,4 +6,5 @@ if Rails.env.profile?
   use Rack::RubyProf, :path => 'tmp/profile'
 end
 
+use Decko::Rack::FetchCard
 run CoreDev::Application

@@ -4,6 +4,7 @@ require 'decko/application'
 
 module CoreDev
   class Application < Decko::Application
+    #config.middleware.use Decko::Rack::FetchCard
     config.performance_logger = nil
 
     # Decko inherits Rails configuration options.  See http://guides.rubyonrails.org/configuring.html
@@ -25,7 +26,7 @@ module CoreDev
     # the line below and run 'bin/delayed_job start' to start the background process.
     # See https://github.com/collectiveidea/delayed_job#running-jobs for more information
     #
-    # Delayed::Worker.delay_jobs = true
+    Delayed::Worker.delay_jobs = true
 
     # config.read_only = true
     # defaults to false
@@ -82,5 +83,13 @@ module CoreDev
 
     # config.override_protocol = nil
     # don't autodetect protocol (http/https) from web requests
+    #config.x.decks = config_for(:decks)
+#warn "configure #{config.inspect}, #{config.try(:decks).inspect}"
   end
 end
+
+#module MultiDeck
+#  class Application < CoreDev::Application
+#  end
+#end
+
